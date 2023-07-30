@@ -1,3 +1,4 @@
+import Button from '../Button'
 import DropdownList from '../DropdownList'
 import TextField from '../TextField'
 import './Formulario.css'
@@ -22,6 +23,9 @@ const Formulario = () => {
                 <TextField label="Cargo" placeholder="Digite seu cargo" />
                 <TextField label="Imagem" placeholder="Digite o endereço da imagem" />
                 <DropdownList label="Time" itens={teams} />
+                <Button>
+                    Criar Card
+                </Button>
             </form>
         </section>
     )
