@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Banner from './components/Banner';
 import Formulario from './components/Formulario';
+import Time from './components/Team';
 
 function App() {
 
@@ -15,6 +16,9 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario theRegisteredEmployee={colaborador => toTheNewContributorAdded(colaborador)} />
+      <Time nome='Programação' />
+      <Time nome='Frontend' />
+      <Time nome='Data Science' />
     </div>
   );
 }
