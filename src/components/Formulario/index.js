@@ -6,16 +6,6 @@ import './Formulario.css'
 
 const Formulario = (props) => {
 
-    const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'DevOps',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
@@ -59,7 +49,7 @@ const Formulario = (props) => {
                 <DropdownList
                     mandatory={true}
                     label="Time"
-                    itens={times}
+                    itens={props.times}
                     valor={time}
                     whenChange={valor => setTime(valor)}
                 />
