@@ -1,11 +1,14 @@
 import './Team.css'
 
-const Team = (props) => {
+const Time = (props) => {
+
+    const css = { backgroundColor: props.corSecundaria }
+
     return (
-        <section className='time'>
-            <h3> {props.nome} </h3>
+        <section className='time' style={css}>
+            <h3 style={{ borderColor: props.corPrimaria }}> {props.nome} </h3>
         </section>
     )
 }
 
-export default Team
+export default Time
