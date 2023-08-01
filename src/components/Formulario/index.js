@@ -21,6 +21,7 @@ const Formulario = (props) => {
         })
         setNome('')
         setCargo('')
+        setImagem('')
         setTime('')
     }
 
